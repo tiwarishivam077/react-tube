@@ -7,7 +7,7 @@ const VideoContainer = () => {
 
   return (
    
-    <div className='flex flex-wrap justify-start py-36'>
+    <div className='flex flex-wrap justify-evenly pt-36 pb-24'>
     {
       temp.map((el, idx)=><VideoCard key={idx} videoNumber={el+1}/>)
     }

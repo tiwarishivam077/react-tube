@@ -1,21 +1,43 @@
 
 import { youtube_favicon_url } from '../utils/constants';
 import { MdOutlineMenu } from "react-icons/md";
+import HomeVerticalNav from './home-vertical-nav';
+import YouVerticalNav from './you-vertical-nav';
+// import SubscriptionsVerticalNav from './subscriptions-vertical-nav';
+import ExploreVerticalNav from './explore-vertical-nav';
+import MoreFromYouTube from './more-from-youtube-vertical-nav';
+import Settings from './setting-vertical-nav';
+import AboutVerticalNav from './about-vertical-nav';
 
 const SideBar = () => {
   return (
-    <div className=''>
-      <div className=' flex justify-evenly fixed ml-8 my-4'>
+    <div className='flex flex-col w-full h-full bg-black'>
+      <div className=' flex justify-evenly fixed ml-5 my-4 '>
       
-         <div className='w-[20px] -mt-3 text-white mr-6'>
-          <MdOutlineMenu size={50}/>
+         <div className='text-white bg-black mr-3'>
+          <MdOutlineMenu size={25}/>
           </div>
 
-   <div className=' h-[90px] -mt-8 ml-8 flex'>
-     <img src={youtube_favicon_url } alt='logo' className='rounded-md' />
-    </div>
+       <div className=' h-[60px] w-[250px] -mt-6 ml-2 flex'>
+        <img src={youtube_favicon_url } alt='logo' className='rounded-md' />
+       </div>
 
-</div>
+      </div>
+
+   <div> <HomeVerticalNav/></div>
+
+   <div> <YouVerticalNav/></div>
+
+   <div><ExploreVerticalNav/></div>
+   
+   <div> <MoreFromYouTube/></div>
+
+   <div><Settings/></div>
+
+   
+   <div><AboutVerticalNav/></div>
+
+       
 </div>
    
   )

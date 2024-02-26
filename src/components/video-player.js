@@ -44,7 +44,7 @@ const VideoPlayer = () => {
   const playerRef = React.createRef();
 
   return (
-    <div className="player-wrapper">
+    <div className="player-wrapper rounded-2xl">
       <ReactPlayer
         ref={playerRef}
         url={video_url}

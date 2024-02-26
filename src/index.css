@@ -30,9 +30,17 @@ html,body
 
 .player-wrapper {
   position: relative;
-  padding-top: 56.25%; /* 720 / 1280 = 0.5625 */
+  padding-top: 1.25%;
+  /* border: 1px solid white;  */
+  width: 390px;
+  height: 223px;
+  border-radius: 20px;
 }
 
-
-
-
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  overflow: hidden;
+}

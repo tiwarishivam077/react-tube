@@ -11,10 +11,10 @@ const Header = () => {
     <div className='flex flex-col w-screen   '>
     <div className='font-bold text-4xl text-white mx-4 p-3 text-center w-screen flex justify-start '>
     
-    <div className='mr-4 p-4 text-center w-[1050px] h-20 -mt-4 flex justify-center '>
+    <div className='mr-4 p-4 text-center w-[1050px] h-18 -mt-2 flex justify-center '>
     <input
       type='text'
-      className=' w-1/2 text-xl py-2 px-4 rounded-3xl font-thin bg-transparent text-white border-gray-600 border-[0.1px]'
+      className=' w-1/2 text-xl py-2 px-4 rounded-3xl font-thin bg-black text-white border-gray border-[0.1px]'
       placeholder='Search'
      />
      <CiSearch className='mx-4 my-2' size={25} />

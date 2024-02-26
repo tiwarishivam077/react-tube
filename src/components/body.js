@@ -6,11 +6,11 @@ const Body = () => {
   return (
     <div className='flex'>
 
-    <div className='w-[17%]'>
+    <div className='w-[16%]'>
     <SideBar/>
     </div>
 
-    <div className='w-[83%]'>
+    <div className='w-[84%]'>
     <MainContainer/>
     </div>
     

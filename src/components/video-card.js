@@ -33,9 +33,14 @@ const VideoCard = ({videoNumber}) => {
   //   playerRef.current.seekTo(newTime);
   // };
 
-setTimeout(()=>{
-  setPlaying(true)
-}, 3000)
+  setTimeout(()=>{
+    setPlaying(true)
+  }, 2000)
+  
+
+  const toggleThumbnail=()=>{
+    setPlaying(false)
+  }
 
   const handleProgress = (state) => {
     if (!seeking) {
@@ -60,24 +65,27 @@ setTimeout(()=>{
       <div className='w-[400px] h-[223px] rounded-2xl  relative'>
      {
        !playing ? <ShimmerVideoCard className='absolute'/> :
+       <div className='player-wrapper'> 
       <ReactPlayer
-      className=''
+      className='react-player'
       url={video_url}
       width='100%'
       height='100%'
       playing={playing}
       volume={volume}
       muted={muted}
+      light = {playing ? true : false }
       playbackRate={playbackRate}
       controls={true}
       style={divStyle}
       onPlay={() => console.log('onPlay')}
-      onPause={() => console.log('onPause')}
+      onPause={() => toggleThumbnail()}
       onEnded={() => console.log('onEnded')}
       onError={(e) => console.log('onError', e)}
       onProgress={handleProgress}
       onDuration={handleDuration}
        />
+       </div>
      }
       </div>
 
