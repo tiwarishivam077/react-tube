@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { bg_img_url, profile_img_url, video_url } from '../utils/constants'
 import ReactPlayer from 'react-player'
 import ShimmerVideoCard from './shimmerUi';
@@ -9,7 +9,10 @@ const VideoCard = ({videoNumber}) => {
     
   };
 
-  const [playing, setPlaying] = useState(false);
+  const [playing, setPlaying] = useState(true);
+  const [focus, setFocus] = useState(false);
+
+
   const [volume, setVolume] = useState(0.5);
   const [played, setPlayed] = useState(0);
   const [muted, setMuted] = useState(false);
@@ -17,6 +20,19 @@ const VideoCard = ({videoNumber}) => {
   const [duration, setDuration] = useState(0);
   const [playbackRate, setPlaybackRate] = useState(1);
   const [fullscreen, setFullscreen] = useState(false);
+
+
+  const playVideo = useRef(null)
+
+
+
+  const loop = () => {
+    // playVideo.current.play();
+  };
+
+useEffect(() => {
+    if (focus) loop(); // when focused then loop
+  }, [focus]);
 
   // const handlePlayPause = () => setPlaying(!playing);
 
@@ -68,13 +84,14 @@ const VideoCard = ({videoNumber}) => {
        <div className='player-wrapper'> 
       <ReactPlayer
       className='react-player'
+      ref={playVideo}
       url={video_url}
       width='100%'
       height='100%'
       playing={playing}
       volume={volume}
       muted={muted}
-      light = {playing ? true : false }
+      light = {playing}
       playbackRate={playbackRate}
       controls={true}
       style={divStyle}
@@ -84,6 +101,8 @@ const VideoCard = ({videoNumber}) => {
       onError={(e) => console.log('onError', e)}
       onProgress={handleProgress}
       onDuration={handleDuration}
+      onMouseOver={() => setFocus(true)}
+      onMouseOut={() => setFocus(false)}
        />
        </div>
      }

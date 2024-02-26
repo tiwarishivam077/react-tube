@@ -4,13 +4,13 @@ import MainContainer from './main-container'
 
 const Body = () => {
   return (
-    <div className='flex'>
+    <div className='flex flex-row w-full h-screen overflow-scroll"'>
 
-    <div className='w-[16%]'>
+    <div className='w-1/6 h-full overflow-y-auto '>
     <SideBar/>
     </div>
 
-    <div className='w-[84%]'>
+    <div className='w-5/6 flex-1 h-full overflow-y-auto'>
     <MainContainer/>
     </div>
     

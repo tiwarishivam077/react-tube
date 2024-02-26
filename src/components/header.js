@@ -8,7 +8,7 @@ import ButtonList from './button-list';
 const Header = () => {
   return (
     <div className=' bg-black fixed  z-[1000]'>
-    <div className='flex flex-col w-screen   '>
+<div className='flex flex-col w-screen   '>
     <div className='font-bold text-4xl text-white mx-4 p-3 text-center w-screen flex justify-start '>
     
     <div className='mr-4 p-4 text-center w-[1050px] h-18 -mt-2 flex justify-center '>
@@ -31,12 +31,12 @@ const Header = () => {
     <div  className='mx-4'>
       <FaUserCircle/>
     </div>
-    </div>
+        </div>
 </div>
 
-<div className='p-4 mb-2 -mt-4'>
+  <div className='p-4 mb-2 -mt-4'>
   <ButtonList />
-</div>
+  </div>
 </div>
 </div>
   )

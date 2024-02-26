@@ -11,14 +11,16 @@ import AboutVerticalNav from './about-vertical-nav';
 
 const SideBar = () => {
   return (
-    <div className='flex flex-col w-full h-full bg-black'>
-      <div className=' flex justify-evenly fixed ml-5 my-4 '>
+    <div className=''>
+    <div className='flex flex-col w-1/3 h-full'>
+
+      <div className='flex justify-evenly  -ml-1 my-0  fixed py-4 bg-opacity-100 bg-black w-[250px] h-[60px]'>
       
-         <div className='text-white bg-black mr-3'>
+         <div className='text-white bg-black '>
           <MdOutlineMenu size={25}/>
           </div>
 
-       <div className=' h-[60px] w-[250px] -mt-6 ml-2 flex'>
+       <div className=' h-[60px] w-[150px] -mt-4 -ml-4 flex'>
         <img src={youtube_favicon_url } alt='logo' className='rounded-md' />
        </div>
 
@@ -37,9 +39,9 @@ const SideBar = () => {
    
    <div><AboutVerticalNav/></div>
 
-       
 </div>
-   
+
+   </div>
   )
 }
 

@@ -9,15 +9,10 @@ import { BiLike } from "react-icons/bi";
 const YouVerticalNav = () => {
     return (
         <>
-        <div className='w-full h-[270px] mt-8  -ml-9  text-white flex flex-col'>
-       
-        <div class="flex items-center my-2">
-       <div class="flex-1 border-t-[0.1px] border-gray-200"></div>
-       </div>
-
-        <div className='py-3 px-8 mx-8  text-white text-lg  font-medium bg-opacity-0 whitespace-nowrap  hover:bg-opacity-100 hover:bg-gray-800  flex'>
+        <div className='w-full h-[260px] mt-8  -ml-9  text-white flex flex-col'>
         
-        {/* <div className='px-2 -ml-3 mr-2 mt-1'><MdHomeFilled /></div> */}
+        <div className='py-3 px-8 mx-8  text-white text-lg  font-medium bg-opacity-0 whitespace-nowrap  hover:bg-opacity-100 hover:bg-gray-800 rounded-lg flex'>
+       
         <div className='px-2 -ml-3 mr-6 mt-1'><PiUserRectangleLight  size={20}/></div>
          <div className=''>Your Channel</div>
     
@@ -58,6 +53,11 @@ const YouVerticalNav = () => {
          
          </div>
     
+         <div class="flex items-center my-[20px] w-[300px] ml-[10px]">
+        <div class="flex-1 border-t-[0.1px] border-gray-200 w-full"></div>
+        </div>
+      
+
         </div>
         
          </>
