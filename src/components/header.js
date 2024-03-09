@@ -7,14 +7,14 @@ import { FaUserCircle } from "react-icons/fa";
 import ButtonList from './button-list';
 const Header = () => {
   return (
-    <div className=' bg-black fixed  z-[1000]'>
+    <div className='z-[100] bg-black bg-opacity-90 fixed'>
 <div className='flex flex-col w-screen   '>
     <div className='font-bold text-4xl text-white mx-4 p-3 text-center w-screen flex justify-start '>
     
-    <div className='mr-4 p-4 text-center w-[1050px] h-18 -mt-2 flex justify-center '>
+    <div className='mr-4 p-4 text-center w-[1050px] h-18 -mt-2 flex justify-center'>
     <input
       type='text'
-      className=' w-1/2 text-xl py-2 px-4 rounded-3xl font-thin bg-black text-white border-gray border-[0.1px]'
+      className=' w-1/2 text-xl py-2 px-4 rounded-3xl font-thin text-white  border-[0.1px] bg-black opacity-40 '
       placeholder='Search'
      />
      <CiSearch className='mx-4 my-2' size={25} />

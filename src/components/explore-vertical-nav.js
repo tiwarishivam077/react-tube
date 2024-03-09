@@ -16,85 +16,89 @@ import { MdOutlinePodcasts } from "react-icons/md";
 const ExploreVerticalNav = () => {
     return (
         <>
-        <div className='w-full h-[380px] mt-6 mb-[100px] -ml-9  text-white flex flex-col'>
+        <div className='w-full h-[380px] mt-12 mb-[100px] -ml-9  text-white flex flex-col'>
        
 
-        <div className='py-3 px-8 mx-8  text-white text-lg  font-medium bg-opacity-0 whitespace-nowrap  hover:bg-opacity-100 hover:bg-gray-800  rounded-lg flex'>
+       <div>
+        <p className='text-xl font-extrabold mt-4 ml-10 px-4'>Explore</p>
+       </div>
+
+        <div className='mx-10 mt-1 py-3  w-[210px] text-xl flex rounded-lg hover:bg-gray-800 hover:bg-opacity-100'>
        
-        <div className='px-2 -ml-3 mr-6 mt-1'><FiTrendingUp  size={20}/></div>
-         <div className=''>Trending</div>
+        <div className='px-4'><FiTrendingUp  size={20}/></div>
+         <div className='px-4'>Trending</div>
     
         </div>
-       <div className=' py-3 px-8 mx-8  text-white text-lg  font-medium bg-opacity-0 whitespace-nowrap  hover:bg-opacity-100 hover:bg-gray-800 border-white border-[0px] rounded-lg flex'>
+       <div className='mx-10 mt-1 py-3  w-[210px] text-xl flex rounded-lg hover:bg-gray-800 hover:bg-opacity-100'>
          
-        <div className='px-2 -ml-3 mr-6 mt-1'><HiMiniShoppingBag  size={20}/></div>
-         <div className=''>Shopping</div>
+        <div className='px-4'><HiMiniShoppingBag  size={20}/></div>
+         <div className='px-4'>Shopping</div>
     
         </div>
     
-       <div className=' py-3 px-8 mx-8  text-white text-lg  font-medium bg-opacity-0 whitespace-nowrap  hover:bg-opacity-100 hover:bg-gray-800 border-white border-[0px] rounded-lg flex'>
+       <div className='mx-10 mt-1 py-3  w-[210px] text-xl flex rounded-lg hover:bg-gray-800 hover:bg-opacity-100'>
          
-        {/* <div className='px-2 -ml-3 mr-6 mt-1'><MdSubscriptions /></div> */}
-        <div className='px-2 -ml-3 mr-6 mt-1'><LuMusic4 size={20} /></div>
-         <div className=''>Music</div>
+        {/* <div className='px-4'><MdSubscriptions /></div> */}
+        <div className='px-4'><LuMusic4 size={20} /></div>
+         <div className='px-4'>Music</div>
         
         </div>
     
-       <div className=' py-3 px-8 mx-8  text-white text-lg  font-medium bg-opacity-0 whitespace-nowrap  hover:bg-opacity-100 hover:bg-gray-800 border-white border-[0px] rounded-lg flex'>
+       <div className='mx-10 mt-1 py-3  w-[210px] text-xl flex rounded-lg hover:bg-gray-800 hover:bg-opacity-100'>
          
-        <div className='px-2 -ml-3 mr-6 mt-1'><BiMoviePlay size={20} /></div>
-         <div className=''>Movies</div>
+        <div className='px-4'><BiMoviePlay size={20} /></div>
+         <div className='px-4'>Movies</div>
         
         </div>
 
-        <div className=' py-3 px-8 mx-8  text-white text-lg  font-medium bg-opacity-0 whitespace-nowrap  hover:bg-opacity-100 hover:bg-gray-800 border-white border-[0px] rounded-lg flex'>
+        <div className='mx-10 mt-1 py-3  w-[210px] text-xl flex rounded-lg hover:bg-gray-800 hover:bg-opacity-100'>
          
-         <div className='px-2 -ml-3 mr-6 mt-1'><HiMiniSignal size={20} /></div>
-          <div className=''>Live </div>
-         
-         </div>
-
-         <div className=' py-3 px-8 mx-8  text-white text-lg  font-medium bg-opacity-0 whitespace-nowrap  hover:bg-opacity-100 hover:bg-gray-800 border-white border-[0px] rounded-lg flex'>
-         
-         <div className='px-2 -ml-3 mr-6 mt-1'><SiYoutubegaming size={20} /></div>
-          <div className=''>Gaming </div>
+         <div className='px-4'><HiMiniSignal size={20} /></div>
+          <div className='px-4'>Live </div>
          
          </div>
 
-         <div className=' py-3 px-8 mx-8  text-white text-lg  font-medium bg-opacity-0 whitespace-nowrap  hover:bg-opacity-100 hover:bg-gray-800 border-white border-[0px] rounded-lg flex'>
+         <div className='mx-10 mt-1 py-3  w-[210px] text-xl flex rounded-lg hover:bg-gray-800 hover:bg-opacity-100'>
          
-         <div className='px-2 -ml-3 mr-6 mt-1'><RiNewspaperLine size={20} /></div>
-          <div className=''>News </div>
+         <div className='px-4'><SiYoutubegaming size={20} /></div>
+          <div className='px-4'>Gaming </div>
          
          </div>
 
-         <div className=' py-3 px-8 mx-8  text-white text-lg  font-medium bg-opacity-0 whitespace-nowrap  hover:bg-opacity-100 hover:bg-gray-800 border-white border-[0px] rounded-lg flex'>
+         <div className='mx-10 mt-1 py-3  w-[210px] text-xl flex rounded-lg hover:bg-gray-800 hover:bg-opacity-100'>
          
-         <div className='px-2 -ml-3 mr-6 mt-1'><TfiCup size={20} /></div>
-          <div className=''>Sports </div>
-         
-         </div>
-         <div className=' py-3 px-8 mx-8  text-white text-lg  font-medium bg-opacity-0 whitespace-nowrap  hover:bg-opacity-100 hover:bg-gray-800 border-white border-[0px] rounded-lg flex'>
-         
-         <div className='px-2 -ml-3 mr-6 mt-1'><BsLightbulb size={20} /></div>
-          <div className=''>Learning </div>
+         <div className='px-4'><RiNewspaperLine size={20} /></div>
+          <div className='px-4'>News </div>
          
          </div>
-         <div className=' py-3 px-8 mx-8  text-white text-lg  font-medium bg-opacity-0 whitespace-nowrap  hover:bg-opacity-100 hover:bg-gray-800 border-white border-[0px] rounded-lg flex'>
+
+         <div className='mx-10 mt-1 py-3  w-[210px] text-xl flex rounded-lg hover:bg-gray-800 hover:bg-opacity-100'>
          
-         <div className='px-2 -ml-3 mr-6 mt-1'><BiLike size={20} /></div>
-          <div className=''>Fashion & Beauty </div>
+         <div className='px-4'><TfiCup size={20} /></div>
+          <div className='px-4'>Sports </div>
          
          </div>
-         <div className=' py-3 px-8 mx-8  text-white text-lg  font-medium bg-opacity-0 whitespace-nowrap  hover:bg-opacity-100 hover:bg-gray-800 border-white border-[0px] rounded-lg flex'>
+         <div className='mx-10 mt-1 py-3  w-[210px] text-xl flex rounded-lg hover:bg-gray-800 hover:bg-opacity-100'>
          
-         <div className='px-2 -ml-3 mr-6 mt-1'><MdOutlinePodcasts size={20} /></div>
-          <div className=''>Podcasts </div>
+         <div className='px-4'><BsLightbulb size={20} /></div>
+          <div className='px-4'>Learning </div>
+         
+         </div>
+         <div className='mx-10 mt-1 py-3  w-[210px] text-xl flex rounded-lg hover:bg-gray-800 hover:bg-opacity-100'>
+         
+         <div className='px-4'><BiLike size={20} /></div>
+          <div className='px-4'>Fashion & Beauty </div>
+         
+         </div>
+         <div className='mx-10 mt-1 py-3  w-[210px] text-xl flex rounded-lg hover:bg-gray-800 hover:bg-opacity-100'>
+         
+         <div className='px-4'><MdOutlinePodcasts size={20} /></div>
+          <div className='px-4'>Podcasts </div>
          
          </div>
          
 
-         <div class="flex items-center my-[20px] w-[300px] ml-[10px]">
+         <div class="flex items-center mt-2 mb-[20px] w-[300px] ml-[10px]">
        <div class="flex-1 border-t-[0.1px] border-gray-200 w-full"></div>
        </div>
     

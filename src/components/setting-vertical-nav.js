@@ -10,33 +10,33 @@ const Settings = () => {
         <div className='w-full h-[175px] mt-6  -ml-9  text-white flex flex-col'>
        
        
-        <div className='py-3 px-8 mx-8  text-white text-lg  font-medium bg-opacity-0 whitespace-nowrap  hover:bg-opacity-100 hover:bg-gray-800 rounded-lg flex'>
+        <div className='mx-10 mt-1 py-3  w-[210px] text-xl flex rounded-lg hover:bg-gray-800 hover:bg-opacity-100'>
         
         {/* <div className='px-2 -ml-3 mr-2 mt-1'><MdHomeFilled /></div> */}
-        <div className='px-2 -ml-3 mr-6 mt-1'><IoSettingsOutline  size={20}/></div>
-         <div className=''>Settings</div>
+        <div className='px-4'><IoSettingsOutline  size={20}/></div>
+         <div className='px-4'>Settings</div>
     
         </div>
-       <div className=' py-3 px-8 mx-8  text-white text-lg  font-medium bg-opacity-0 whitespace-nowrap  hover:bg-opacity-100 hover:bg-gray-800 border-white border-[0px] rounded-lg flex'>
+       <div className=' mx-10 mt-1 py-3  w-[210px] text-xl flex rounded-lg hover:bg-gray-800 hover:bg-opacity-100'>
          
-        <div className='px-2 -ml-3 mr-6 mt-1'><RiFlagLine  size={20}/></div>
-         <div className=''>Report History</div>
+        <div className='px-4'><RiFlagLine  size={20}/></div>
+         <div className='px-4'>Report History</div>
     
         </div>
     
-       <div className=' py-3 px-8 mx-8  text-white text-lg  font-medium bg-opacity-0 whitespace-nowrap  hover:bg-opacity-100 hover:bg-gray-800 border-white border-[0px] rounded-lg flex'>
+       <div className=' mx-10 mt-1 py-3  w-[210px] text-xl flex rounded-lg hover:bg-gray-800 hover:bg-opacity-100'>
          
        
-        <div className='px-2 -ml-3 mr-6 mt-1'><MdHelpOutline size={20} /></div>
-         <div className=''>Help</div>
+        <div className='px-4'><MdHelpOutline size={20} /></div>
+         <div className='px-4'>Help</div>
         
         </div>
 
-        <div className=' py-3 px-8 mx-8  text-white text-lg  font-medium bg-opacity-0 whitespace-nowrap  hover:bg-opacity-100 hover:bg-gray-800 border-white border-[0px] rounded-lg flex'>
+        <div className=' mx-10 mt-1 py-3  w-[210px] text-xl flex rounded-lg hover:bg-gray-800 hover:bg-opacity-100'>
          
        
-         <div className='px-2 -ml-3 mr-6 mt-1'><MdOutlineFeedback size={20} /></div>
-          <div className=''>Send Feedback</div>
+         <div className='px-4'><MdOutlineFeedback size={20} /></div>
+          <div className='px-4'>Send Feedback</div>
          
          </div>
 

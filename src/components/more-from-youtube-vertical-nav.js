@@ -6,29 +6,30 @@ import { TbBrandYoutubeKids } from "react-icons/tb";
 const MoreFromYouTube = () => {
     return (
         <>
-        <div className='w-full h-[140px] mt-6  -ml-9  text-white flex flex-col'>
+        <div className='w-full h-[220px] mt-10  -ml-9  text-white flex flex-col'>
        
+
+        <div className="w-[300px] mt-8">
+        <p className='text-xl font-extrabold mt-4 ml-10 px-4'> More From YouTube</p>
+       </div>
+        <div className='mx-10 mt-1 py-3  w-[210px] text-xl flex rounded-lg hover:bg-gray-800 hover:bg-opacity-100'>
        
-       
-        <div className='py-3 px-8 mx-8  text-white text-lg  font-medium bg-opacity-0 whitespace-nowrap  hover:bg-opacity-100 hover:bg-gray-800  rounded-lg flex'>
-        
-        {/* <div className='px-2 -ml-3 mr-2 mt-1'><MdHomeFilled /></div> */}
-        <div className='px-2 -ml-3 mr-6 mt-1'><SiYoutubestudio  size={20}/></div>
-         <div className=''>YouTube Studio</div>
+        <div className='px-4'><SiYoutubestudio  size={20}/></div>
+         <div className='px-4'>YouTube Studio</div>
     
         </div>
-       <div className=' py-3 px-8 mx-8  text-white text-lg  font-medium bg-opacity-0 whitespace-nowrap  hover:bg-opacity-100 hover:bg-gray-800 border-white border-[0px] rounded-lg flex'>
+       <div className=' mx-10 mt-1 py-3  w-[210px] text-xl flex rounded-lg hover:bg-gray-800 hover:bg-opacity-100'>
          
-        <div className='px-2 -ml-3 mr-6 mt-1'><SiYoutubemusic  size={20}/></div>
-         <div className=''>YouTube Music</div>
+        <div className='px-4'><SiYoutubemusic  size={20}/></div>
+         <div className='px-4'>YouTube Music</div>
     
         </div>
     
-       <div className=' py-3 px-8 mx-8  text-white text-lg  font-medium bg-opacity-0 whitespace-nowrap  hover:bg-opacity-100 hover:bg-gray-800 border-white border-[0px] rounded-lg flex'>
+       <div className=' mx-10 mt-1 py-3  w-[210px] text-xl flex rounded-lg hover:bg-gray-800 hover:bg-opacity-100'>
          
-        {/* <div className='px-2 -ml-3 mr-6 mt-1'><MdSubscriptions /></div> */}
-        <div className='px-2 -ml-3 mr-6 mt-1'><TbBrandYoutubeKids size={20} /></div>
-         <div className=''>YouTube Kids</div>
+        {/* <div className='px-4'><MdSubscriptions /></div> */}
+        <div className='px-4'><TbBrandYoutubeKids size={20} /></div>
+         <div className='px-4'>YouTube Kids</div>
         
         </div>
     

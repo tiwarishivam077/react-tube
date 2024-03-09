@@ -83,7 +83,7 @@ console.log(filterchosen, 'filter by useState');
   }
 
   return (
-    <div className='overflow-x-auto flex py-1 px-4 bg-black  w-full -mt-4'>
+    <div className='overflow-x-auto flex py-1 px-4 w-full -mt-4'>
     {
       filters.map(el=>
       <Button 

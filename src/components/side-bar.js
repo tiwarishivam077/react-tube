@@ -11,12 +11,12 @@ import AboutVerticalNav from './about-vertical-nav';
 
 const SideBar = () => {
   return (
-    <div className=''>
-    <div className='flex flex-col w-1/3 h-full'>
+    <div className='bg-black '>
+      <div className='flex flex-col w-1/3 h-ful'>
 
-      <div className='flex justify-evenly  -ml-1 my-0  fixed py-4 bg-opacity-100 bg-black w-[250px] h-[60px]'>
+      <div className='flex justify-evenly  -ml-7 my-0  fixed py-4   w-[280px] h-[60px]   bg-black'>
       
-         <div className='text-white bg-black '>
+         <div className='text-white'>
           <MdOutlineMenu size={25}/>
           </div>
 
@@ -26,20 +26,20 @@ const SideBar = () => {
 
       </div>
 
-   <div> <HomeVerticalNav/></div>
+           <div> <HomeVerticalNav/></div>
 
-   <div> <YouVerticalNav/></div>
+            <div> <YouVerticalNav/></div>
 
-   <div><ExploreVerticalNav/></div>
+            <div><ExploreVerticalNav/></div> 
    
-   <div> <MoreFromYouTube/></div>
+         <div> <MoreFromYouTube/></div>
 
-   <div><Settings/></div>
+         <div><Settings/></div>
 
    
-   <div><AboutVerticalNav/></div>
+         <div><AboutVerticalNav/></div>
 
-</div>
+   </div>
 
    </div>
   )
